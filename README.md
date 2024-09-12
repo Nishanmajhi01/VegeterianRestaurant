@@ -1,4 +1,3 @@
-# VegeterianRestaurant
 <<<<<<< HEAD
 Local changes here
 =======
