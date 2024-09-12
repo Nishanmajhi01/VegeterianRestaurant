@@ -1,0 +1,70 @@
+/* Footer grid layout */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns grid */
+    grid-template-areas: 
+      "logo navigation contact social";
+    padding: 20px;
+    border-top: 2px solid #ddd;
+    gap: 20px;
+    text-align: center;
+    margin-top: auto;
+    font-weight: bold;
+    font-size: 1.4em;
+  }
+  .footer-logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-navigation {
+    grid-area: navigation;
+  }
+  
+  .footer-contact {
+    grid-area: contact;
+  }
+  
+  .footer-social-media {
+    grid-area: social;
+  }
+  
+  /* Footer navigation styling */
+  .footer-navigation ul,
+  .footer-social-media ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-navigation li,
+  .footer-social-media li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-navigation a,
+  .footer-social-media a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .footer-contact p {
+    margin: 5px 0;
+  }
+  
+  /* Responsive adjustments */
+  @media only screen and (max-width: 768px) {
+    .footer {
+      grid-template-columns: 1fr; /* One column layout */
+      grid-template-areas: 
+        "logo"
+        "navigation"
+        "contact"
+        "social";
+    }
+  
+    .footer-logo, .footer-navigation, .footer-contact, .footer-social-media {
+      text-align: center;
+    }
+  }
+  
